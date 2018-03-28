@@ -1,0 +1,35 @@
+<html> 
+
+<head>
+<title>Data manipulation using Flask API</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <h1>Metabolites Mean Retention time Calculator</h1>
+    <h3> Operation-1</h3>
+    <form action="/op1" method="post" enctype="multipart/form-data">
+      <input type="file" name="excel" value="Upload">
+      <input type="submit" value="Predict"> {% if label == 1  %}  Download from these links!-->  {% endif %}
+      <a href="file:///D:/Projects/Elucidata Assignment/Results/result1.xlsx" download> Download 1st file</a>
+      <a href="file:///D:/Projects/Elucidata Assignment/Results/result2.xlsx" download> Download 2nd file</a>
+      <a href="file:///D:/Projects/Elucidata Assignment/Results/result3.xlsx" download> Download 3rd file</a>
+    </form>
+    <h3> Operation-2</h3>
+    <form action="/op2" method="post" enctype="multipart/form-data">
+      <input type="file" name="excel" value="Upload">
+      <input type="submit" value="Predict"> {% if label == 2 %}  Download from this link!-->  {% endif %}
+      <a href="file:///D:/Projects/Elucidata Assignment/Results/result4.xlsx" download> Download file </a>
+    </form>
+    <h3> Operation-3</h3>
+    <form action="/op3" method="post" enctype="multipart/form-data">
+      <input type="file" name="excel" value="Upload">
+      <input type="submit" value="Predict"> {% if label == 3 %}  Download from this link!-->  {% endif %}
+      <a href="file:///D:/Projects/Elucidata Assignment/Results/result5.xlsx" download> Download file</a>
+    </form>
+
+</body>
+
+</html>
